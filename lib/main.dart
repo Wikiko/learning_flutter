@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learningflutter/customcard.dart';
+import 'package:learningflutter/gesture.dart';
 import 'package:learningflutter/shared_preferences_counter.dart';
 import 'package:learningflutter/tabs_example.dart';
 
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder> {
         '/a': (BuildContext context) => Counter(),
         '/b': (BuildContext context) => MyStatefulWidget(title: 'Interessante'),
-        '/c': (BuildContext context) => TabsExample()
+        '/c': (BuildContext context) => TabsExample(),
+        '/d': (BuildContext context) => GestureExample()
       },
       title: 'Flutter Demo',
       theme: ThemeData(

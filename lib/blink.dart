@@ -52,10 +52,10 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               ),
             ),
             ListTile(
-              leading: Icon(Icons.plus_one),
-              title: Text('Counter'),
+              leading: Icon(Icons.gesture),
+              title: Text('Gesture'),
               onTap: () {
-                Navigator.of(context).pushNamed('/a');
+                Navigator.of(context).pushNamed('/d');
               },
             ),
             ListTile(
