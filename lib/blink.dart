@@ -41,6 +41,34 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            DrawerHeader(
+              child: Text('Drawer Header Example'),
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.plus_one),
+              title: Text('Counter'),
+              onTap: () {
+                Navigator.of(context).pushNamed('/a');
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.tab),
+              title: Text('Tabs Example'),
+              onTap: () {
+                Navigator.of(context).pushNamed('/c');
+              },
+            )
+          ],
+        ),
+        elevation: 20.0,
+      ),
       appBar: AppBar(title: Text(widget.title)),
       body: Center(
         child: Column(
