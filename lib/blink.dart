@@ -64,6 +64,13 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               onTap: () {
                 Navigator.of(context).pushNamed('/c');
               },
+            ),
+            ListTile(
+              leading: Icon(Icons.http),
+              title: Text('Http Example'),
+              onTap: () {
+                Navigator.of(context).pushNamed('/e');
+              },
             )
           ],
         ),
